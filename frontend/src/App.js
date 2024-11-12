@@ -1,5 +1,3 @@
-
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import DateDropdown from './components/DateDropdown';
@@ -12,7 +10,7 @@ const App = () => {
   const [selectedDate, setSelectedDate] = useState(dates[0]);
   const [strategies, setStrategies] = useState([]);
 
-  // Strategy data based on PDF
+ 
   const strategyArray = [
     {
       view: 'Bullish',
@@ -48,7 +46,7 @@ const App = () => {
     },
   ];
 
-  // Function to fetch strategies based on selected view and date
+  
   const getStrategies = (view, date) => {
     const strategyData = strategyArray.find((item) => item.view === view);
     return strategyData?.value[date] || [];

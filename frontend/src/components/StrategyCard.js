@@ -1,4 +1,4 @@
-// src/components/StrategyCard.js
+
 import React from 'react';
 
 const StrategyCard = ({ name, count }) => (
